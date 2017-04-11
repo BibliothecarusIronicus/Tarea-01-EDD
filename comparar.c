@@ -34,16 +34,16 @@ int anagrama(char *str1, char *str2)
 }
 
 
-void main()
+void main() // Ejemplos de funcionamiento
 {
 	char soup1[10];
 	char suop2[10];
 	char soup3[10];
 	char suop4[10];
-	strcpy(soup1,"base");
-	strcpy(suop2,"aseb");
+	strcpy(soup1,"amor");
+	strcpy(suop2,"roma");
 	strcpy(soup3,"hygs");
 	strcpy(suop4,"lkhs");
-	printf("%s %s %d\n",soup1,suop2,anagrama(soup1,suop2));
-	printf("%s %s %d\n",soup3,suop4,anagrama(soup3,suop4));
+	printf("%s %s %d\n",soup1,suop2,anagrama(soup1,suop2)); // Es anagrama printea base 0000 1
+	printf("%s %s %d\n",soup3,suop4,anagrama(soup3,suop4)); // No es anagrama printea hygs lk0s 0
 }
