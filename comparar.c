@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int anagrama(char *str1, char *str2) 
+int comparar(char *str1, char *str2) 
 {
 	// Encuentra si str1 y str2 son anagramas en caso de ser así retorna 1 en caso contrario 0
 	// Se deben primero cambiar las str para que no contengan tildes
@@ -31,19 +31,4 @@ int anagrama(char *str1, char *str2)
 		}
 	}
 	return 1;
-}
-
-
-void main() // Ejemplos de funcionamiento
-{
-	char soup1[10];
-	char suop2[10];
-	char soup3[10];
-	char suop4[10];
-	strcpy(soup1,"amor");
-	strcpy(suop2,"roma");
-	strcpy(soup3,"hygs");
-	strcpy(suop4,"lkhs");
-	printf("%s %s %d\n",soup1,suop2,anagrama(soup1,suop2)); // Es anagrama printea base 0000 1
-	printf("%s %s %d\n",soup3,suop4,anagrama(soup3,suop4)); // No es anagrama printea hygs lk0s 0
 }
