@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 void destildar(char *str)
 {
     int largo;
@@ -58,19 +54,40 @@ void destildar(char *str)
                         indice++;
                         i++;
                         break;
+                    case -127 :
+                        nuevo[indice]= 'a';
+                        indice++;
+                        i++;
+                        break;
+					case -119 :
+                        nuevo[indice]= 'e';
+                        indice++;
+                        i++;
+                        break;
+                    case -115 :
+                        nuevo[indice]= 'i';
+                        indice++;
+                        i++;
+                        break;
+                    case -109 :
+                        nuevo[indice]= 'o';
+                        indice++;
+                        i++;
+                        break;
+                    case -101 :
+                        nuevo[indice]= 'u';
+                        indice++;
+                        i++;
+                        break;
+                    case -111 :
+                        nuevo[indice]= 'n';
+                        indice++;
+                        i++;
+                        break;
                 }
             }
         }
     }
     strcpy(str,nuevo);
+    free((void*)nuevo);
 }
-
-void main()
-{
-    char str[100];
-    strcpy(str,"Albárícoqúe");
-    destildar (str);
-    printf("%s\n",str); 
-}
-
-
