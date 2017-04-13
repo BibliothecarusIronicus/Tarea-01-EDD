@@ -1,6 +1,6 @@
 void destildar(char *str)
 {
-	int largo;
+    int largo;
     int indice = 0;
     largo = strlen(str);
     char *nuevo;
