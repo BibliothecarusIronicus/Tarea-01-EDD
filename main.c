@@ -125,7 +125,6 @@ int comparar(char *str1, char *str2)
 			}
 		}
 	}
-	printf("Agregando %s de %s\n",str1,str2);
 	return 1;
 }
 
@@ -138,7 +137,6 @@ int anagramas(char **S, int n, char *str)
 	char aux[a];
 	strcpy(aux,str);
 	destildar(aux);
-	printf("-- (%s simplificado a %s) --\n\n",str,aux);
 	for (int i = 0; i < n; i++)
 	{
 		destildar(S[i]);
@@ -163,7 +161,6 @@ void main()
     while(!feof(archivo))
     {
     	fscanf(archivo,"%d",&n);
-    	printf("Large of N: %d\n",n);
     	S = (char **)malloc(sizeof(char*)*n);
     	for (int i = 0; i < n; i++)
     	{
@@ -172,10 +169,7 @@ void main()
     		S[i] = (char *)malloc(t*sizeof(char));
     		strcpy(S[i],aux3);	
     	}
-    	printf("All Copied to N\n");
-    	printf("Set N Ready\n");
     	fscanf(archivo,"%d",&m);
-    	printf("Large of M: %d\n",m);
     	F = (char **)malloc(sizeof(char *)*m);
     	for (int j = 0; j < m; j++)
     	{
@@ -184,13 +178,9 @@ void main()
     		F[j] = (char *)malloc(t*sizeof(char));
     		strcpy(F[j],aux4);
     	}
-    	printf("All Copied to M\n");
-    	printf("Set M Ready\n");
     	for (int w = 0; w < m; w++)
     	{
-    		printf("----- Anagramas de %s -----\n",F[w]);
     		q = anagramas(S,n,F[w]);
-    		printf("%d\n\n",q);
     	}
     	free((void *)S);
     	free((void *)F);
