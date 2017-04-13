@@ -55,7 +55,7 @@ void destildar(char *str)
                         i++;
                         break;
                     case -79 :
-                        nuevo[indice]= 'n';
+                        nuevo[indice]= 'N';
                         indice++;
                         i++;
                         break;
@@ -79,13 +79,13 @@ void destildar(char *str)
                         indice++;
                         i++;
                         break;
-                    case -101 :
+                    case -102 :
                         nuevo[indice]= 'u';
                         indice++;
                         i++;
                         break;
                     case -111 :
-                        nuevo[indice]= 'n';
+                        nuevo[indice]= 'N';
                         indice++;
                         i++;
                         break;
