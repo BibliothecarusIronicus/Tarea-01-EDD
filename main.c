@@ -110,17 +110,17 @@ int comparar(char *str1, char *str2)
 	strcpy(copy1,str1);
 	strcpy(copy2,str2);
 	
-	if (largo1 != largo2) return 0; 					// Distinta cantidad de letras
+	if (largo1 != largo2) return 0; // Distinta cantidad de letras
 	
 	for(i=0; i < largo1; i++)
 	{
 		for (int j = 0; j < largo2;j++)
 		{		
 			igual = strchr(copy2,copy1[indice]);		 // Busca el char en el string
-			if (igual == NULL) return 0; 				 // Misma cantidad de letras pero no esta la buscada
+			if (igual == NULL) return 0; 		// Misma cantidad de letras pero no esta la buscada
 			else if (copy2[j] == copy1[indice])
 			{
-				copy2[j] = 48;							// Si esta rellenamos con un cero y pasamos a la proxima letra
+				copy2[j] = 48;	// Si esta rellenamos con un cero y pasamos a la proxima letra
 				indice++;
 			}
 		}
