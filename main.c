@@ -152,9 +152,9 @@ void main()
 {
     int n,q,t,m,w;
     char **S,**F;
-    char str[10];
-    char aux3[20];
-    char aux4[20];
+    char str[200];
+    char aux3[200];
+    char aux4[200];
     strcpy(str,"Roma");
     FILE *archivo;
     archivo = fopen("strings-10K.txt","r");
